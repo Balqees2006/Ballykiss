@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #94b6db;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.WeatherApp {
+    width: 350px;
+    max-width: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Search */
+.search {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.search input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Weather information */
+.weatherInfo h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#weatherIcon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.weatherInfo h3 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.weatherInfo p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Details */
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.details div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.details span {
+    font-size: 25px;
+}
+
+.details p {
+    font-size: 14px;
+    color: #777;
+}
+
+.details strong {
+    font-size: 16px;
+}
+
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .WeatherApp {
+        width: 450px;
+        padding: 35px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .weatherInfo h2 {
+        font-size: 38px;
+    }
+
+    .weatherInfo h3 {
+        font-size: 45px;
+    }
+
+    #weatherIcon {
+        font-size: 70px;
+    }
+
+    .details {
+        margin-top: 35px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .WeatherApp {
+        width: 100%;
+        max-width: 350px;
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .search button {
+        width: 100%;
+    }
+
+    .weatherInfo h2 {
+        font-size: 30px;
+    }
+
+    #weatherIcon {
+        font-size: 55px;
+    }
+
+    .weatherInfo h3 {
+        font-size: 38px;
+    }
+
+    .details {
+        margin-top: 25px;
+    }
+}
+
+
+/* SMALL PHONES */
+@media (max-width: 400px) {
+
+    .WeatherApp {
+        padding: 22px 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .weatherInfo h2 {
+        font-size: 27px;
+    }
+
+    .weatherInfo h3 {
+        font-size: 35px;
+    }
+
+    #weatherIcon {
+        font-size: 50px;
+    }
+
+    .details span {
+        font-size: 22px;
+    }
+
+    .details p {
+        font-size: 13px;
+    }
+
+    .details strong {
+        font-size: 14px;
+    }
+}
