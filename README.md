@@ -1,1 +1,1 @@
-Thi a weather website
+This a weather website
